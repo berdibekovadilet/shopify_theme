@@ -6,4 +6,10 @@
             <li> {{ link.title | link_to: link.url }}</li>
         {%- endfor %}
     </ul>
+    <form action="/search">
+        <label>
+            <input type="search" name="q"/>
+        </label>
+        <button type="submit">Search</button>
+    </form>
 </header>
